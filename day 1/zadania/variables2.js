@@ -1,0 +1,5 @@
+let firstName = 'Jan',
+    lastName = 'Kowalski',
+    country = 'Polska',
+    age = 100,
+    isMarried = false,
