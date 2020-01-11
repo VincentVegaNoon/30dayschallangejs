@@ -36,6 +36,9 @@
             let a = prompt('enter a of triangle')
             let b = prompt('enter b of triangle')
             let c = prompt('enter c of triangle')
+            let aInt = parseInt(prompt('enter a of triangle'))
+            let bInt = parseInt(prompt('enter b of triangle'))
+            let cInt = parseInt(prompt('enter c of triangle'))
             let perimeter = a + b + c
     //2.3 Get length and width using prompt and calculate an area of rectangle (area = length x width and the perimeter of rectangle (perimeter = 2 x (length + width))
             let lenght = prompt('enter lenght')
@@ -80,35 +83,36 @@
     //4.1 Find the length of python and jargon and make a falsy comparison statement.
             let pN = 'python'
             let jN = 'jargon'
-            console.log(pN.lenght)
-            console.log(jN.lenght)
-            pN != jN
+            console.log(pN.length)
+            console.log(jN.length)
+            pN.lenght != jN.lenght
 //5. Exercises: Logical Operators
     //5.1Figure out the result of the following expressions first without using console.log(). After you decide the result confirm it by using console.log()
             4 > 3 && 10 < 12 // true and true -> true
             4 > 3 && 10 > 12 //true and false -> false
             4 > 3 || 10 < 12 //true and true -> true
-            4 > 3 || 10 > 12 //true and false -> false
+            4 > 3 || 10 > 12 //true and false -> true
             !(4 > 3) //false
             !(4 < 3) //true
-            !(false) //false
+            !(false) //true
             !(4 > 3 && 10 < 12) //false and false -> false
-            !(4 > 3 && 10 > 12) //false and true -> false
+            !(4 > 3 && 10 > 12) //false and true -> true
             !(4 === '4') //true
     //5.2 There is no 'on' in both dragon and python //false
 //6. Ternary Operator
             //6.1 If the length of your name is greater than 7 say, your name is long else say your name is short.
-            let name = 7
-name >= 7
-    ? console.log(`${name} your name is long`)
-    : console.log(`${name} your name is short`)
-
-name <= 7
-    ? console.log(`${name} your name is short`)
-    : console.log(`${name} your name is long`)
-
-
-//7. Exercises: Date time Object
+            let name = prompt ('enter your name')
+            name.length > 7 ? console.log(${name} your name is long) : console.log(${name} your name is short)
+            //6.2 Compare your first name length and your family name length and you should get this output. 
+            let firstName = 'Asabeneh'
+            let lastName = 'Yetayeh'
+            firstName.length > lastName.length ? console.log(${firstName} Your first name,  is longer than your family name, ${lastName}) : console.log(${lastName} Your last name is longer)
+            //6.3 Declare two variables myAge and yourAge and assign them initial values and myAge and yourAge.
+            let myAge = 250
+            let yourAge = 25
+            myAge > yourAge ? console.log('I am' + (myAge - yourAge) + 'years older than you') : console.log('You are' + (yourAge - myAge) + 'years older than me')
+            
+            //7. Exercises: Date time Object
     //7.1 What is the year today?
         const now = new Date()
         console.log(now.getFullYear()) 
