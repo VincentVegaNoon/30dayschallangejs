@@ -102,11 +102,11 @@
 //6. Ternary Operator
             //6.1 If the length of your name is greater than 7 say, your name is long else say your name is short.
             let name = prompt ('enter your name')
-            name.length > 7 ? console.log(${name} your name is long) : console.log(${name} your name is short)
+            name.length > 7 ? console.log(${name} + 'your name is long') : console.log(${name} + 'your name is short')
             //6.2 Compare your first name length and your family name length and you should get this output. 
             let firstName = 'Asabeneh'
             let lastName = 'Yetayeh'
-            firstName.length > lastName.length ? console.log(${firstName} Your first name,  is longer than your family name, ${lastName}) : console.log(${lastName} Your last name is longer)
+            firstName.length > lastName.length ? console.log(${firstName} + 'Your first name,  is longer than your family name' + ${lastName}) : console.log(${lastName} + 'Your last name is longer')
             //6.3 Declare two variables myAge and yourAge and assign them initial values and myAge and yourAge.
             let myAge = 250
             let yourAge = 25
