@@ -1,7 +1,7 @@
 //1.Get user input using prompt(“Enter your age:”). If user is 18 or older , give feedback:You are old enough to drive but if not 18 give feedback to wait for the years he supposed to wait for.
 
 let userAge = prompt('enter your age')
-18 <= userAge ? console.log('You are old enough to drive.') : console.log('You are left with 3 years to drive.')
+UserAge >= 18 ? console.log('You are old enough to drive.') : console.log('You are left with' + (18 - userAge) + 'years to drive.')
 
 //2.Compare the values of myAge and yourAge using if … else. Based on the comparison log to console who is older (me or you). Use prompt(“Enter your age:”) to get the age as input.
 let yourAge = prompt('enter your age')
@@ -40,6 +40,7 @@ else if (month === 'May') {console.log('the season is Spring')}
 else if (month === 'June') {console.log('the season is Summer')}
 else if (month === 'July') {console.log('the season is Summer')}
 else if (month === 'August') {console.log('the season is Summer')}
+else {console.log('wrong')}
 //7.Check if a day is weekend day or a working day. Your script will take day as an input.
 let day = prompt('What is the day is today?')
 if (day === 'Monday') {console.log('Monday is a working day.')}
